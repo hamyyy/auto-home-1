@@ -1,0 +1,109 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle="left">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Auto Home</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only menuToggle="right">
+        <ion-icon name="create"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-card class="homePageCard">
+    <img src="https://loremflickr.com/1024/512/tech"/>
+    <ion-card-content>
+      <ion-card-title>
+        Create Device
+      </ion-card-title>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="homePageCard">
+    <img src="https://loremflickr.com/800/400/tech"/>
+    <ion-card-content>
+      <ion-card-title>
+        Nine Inch Nails Live
+      </ion-card-title>
+      <p>
+        The most popular industrial group ever, and largely
+        responsible for bringing the music to a mass audience.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
+
+
+
+
+<ion-menu side="right" [content]="content" [swipeEnabled]="false">
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Add Component</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-list>
+
+      <ion-item>
+        <button ion-button icon-start clear full color="dark" style="text-transform: capitalize; font-size: 100%; padding:0px" menuToggle="right" (click)='addComponent()'>
+          <ion-icon name="add"></ion-icon>
+          Labeled button
+        </button>
+
+        <button ion-button icon-only clear item-end color="outline" menuToggle="right" (click)='infoScreen($event)'>
+          <ion-icon name="information-circle"></ion-icon>
+        </button>
+      </ion-item>
+
+      <ion-item>
+        <button ion-button icon-start clear full color="dark" style="text-transform: capitalize; font-size: 100%; padding:0px" menuToggle="right" (click)='addComponent()'>
+          <ion-icon name="add"></ion-icon>
+          Slider
+        </button>
+
+        <button ion-button icon-only clear item-end color="outline" menuToggle="right" (click)='infoScreen($event)'>
+          <ion-icon name="information-circle"></ion-icon>
+        </button>
+      </ion-item>
+
+      <ion-item>
+        <button ion-button icon-start clear full color="dark" style="text-transform: capitalize; font-size: 100%; padding:0px" menuToggle="right" (click)='addComponent()'>
+          <ion-icon name="add"></ion-icon>
+          Indicator
+        </button>
+
+        <button ion-button icon-only clear item-end color="outline" menuToggle="right" (click)='infoScreen($event)'>
+          <ion-icon name="information-circle"></ion-icon>
+        </button>
+      </ion-item>
+
+      <ion-item>
+        <button ion-button icon-start clear full color="dark" style="text-transform: capitalize; font-size: 100%; padding:0px" menuToggle="right" (click)='addComponent()'>
+          <ion-icon name="add"></ion-icon>
+          Toggle
+        </button>
+
+        <button ion-button icon-only clear item-end color="outline" menuToggle="right" (click)='infoScreen($event)'>
+          <ion-icon name="information-circle"></ion-icon>
+        </button>
+      </ion-item>
+
+
+    </ion-list>
+
+  </ion-content>
+</ion-menu>
+<ion-nav #content></ion-nav>

@@ -1,0 +1,25 @@
+page-home {
+	ion-grid {
+		height: 50%;
+
+		ion-row {
+			height: 100%;
+		}
+
+		
+	}
+}
+
+ion-col {
+	width: 20%;
+}
+
+ion-menu {
+	.button-inner{
+		justify-content:flex-start;
+	}
+}
+
+.homePageCard {
+	border-radius: 10px;
+}
